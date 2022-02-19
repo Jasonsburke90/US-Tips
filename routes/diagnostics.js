@@ -14,7 +14,6 @@ diagnostics.get("/", (req, res) => {
 diagnostics.post("/", (req, res) => {
   // TODO: Logic for appending data to the db/diagnostics.json file
   const { errors } = req.body;
-  console.log(req.body);
   const newDiagnostics = {
     time: Date.now(),
     error_id: uuidv4(),
